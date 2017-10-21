@@ -135,7 +135,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="StackArrays.cpp" />
     <ClCompile Include="StackLists.cpp" />
   </ItemGroup>
