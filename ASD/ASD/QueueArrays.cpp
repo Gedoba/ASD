@@ -9,10 +9,10 @@ QueueArrays::QueueArrays()
 
 QueueArrays::~QueueArrays()
 {
-	cout << "This queue is getting deleted" << endl;
+	cout << "Array queue is getting deleted" << endl;
 	while(front!=-1)
 		dequeue();
-	cout << "Whole queue dequeued" << endl;
+	cout << "Whole array queue dequeued" << endl << endl;
 }
 
 
@@ -41,7 +41,7 @@ bool QueueArrays::enqueue(int data)
 {
 	if (isFull())
 	{
-		cout << "Queue Overflow \n";
+		cout << "Queue Overflow" << endl;
 		return false;
 	}
 	if (front == -1)
@@ -66,10 +66,10 @@ int QueueArrays::dequeue()
 {
 	if (this->isEmpty())
 	{
-		cout << "Queue Underflow\n";
+		cout << "Queue Underflow" << endl;
 		return 0;
 	}
-	cout << "Element deleted from queue is : " << queue[front] << endl;
+	cout << "Element deleted from queue is: " << queue[front] << endl;
 	int deletedData = queue[front];
 	if (front == rear)
 	{
@@ -97,12 +97,12 @@ void QueueArrays::printAll()
                 cout<<"Queue is empty\n";
                 return;
             }
-            cout<<"Queue elements :\n" << "Front -> [ ";
+            cout<<"Array Queue elements :" << endl << "Front -> [ ";
             if (front_pos <= rear_pos)
             {
                 while (front_pos <= rear_pos)
                 {
-                    cout<<queue[front_pos]<<"  ";
+                    cout<<queue[front_pos]<<" ";
                     front_pos++;
                 }
             }
@@ -110,13 +110,13 @@ void QueueArrays::printAll()
             {
                 while (front_pos <= MAX - 1)
                 {
-                    cout<<queue[front_pos]<<"  ";
+                    cout<<queue[front_pos]<<" ";
                     front_pos++;
                 }
                 front_pos = 0;
                 while (front_pos <= rear_pos)
                 {
-                    cout<<queue[front_pos]<<"  ";
+                    cout<<queue[front_pos]<<" ";
                     front_pos++;
                 }
             }

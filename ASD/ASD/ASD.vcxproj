@@ -137,11 +137,13 @@
   <ItemGroup>
     <ClCompile Include="main1.cpp" />
     <ClCompile Include="QueueArrays.cpp" />
+    <ClCompile Include="QueueLists.cpp" />
     <ClCompile Include="StackArrays.cpp" />
     <ClCompile Include="StackLists.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="QueueArrays.h" />
+    <ClInclude Include="QueueLists.h" />
     <ClInclude Include="StackArrays.h" />
     <ClInclude Include="StackLists.h" />
   </ItemGroup>

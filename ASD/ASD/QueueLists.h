@@ -4,21 +4,22 @@
 using namespace std;
 
 #define MAX 10
-
-class QueueArrays {
-	int rear;
-	int front;
+struct Node{
+	int data;
+	Node *next;
+};
+class Queue {
+	Node* front;
+	Node* rear;
 public:
-	int queue[MAX]; //max size of queue
-
-	QueueArrays();
-	~QueueArrays();
+	Queue();
+	~Queue();
 
 
 	int peek();
 	bool isFull();
 	bool isEmpty();
-	bool enqueue(int data);
+	void enqueue(int data);
 	int dequeue();
 	void printAll();
 

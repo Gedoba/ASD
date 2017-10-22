@@ -27,6 +27,9 @@
     <ClCompile Include="QueueArrays.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="QueueLists.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StackArrays.h">
@@ -37,6 +40,9 @@
     </ClInclude>
     <ClInclude Include="QueueArrays.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueLists.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
