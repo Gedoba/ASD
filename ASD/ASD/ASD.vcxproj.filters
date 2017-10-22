@@ -21,13 +21,16 @@
     <ClCompile Include="StackLists.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="QueueArrays.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="QueueLists.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DoublyLinkedList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DoublyLinkedListTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -42,7 +45,10 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="QueueLists.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DoublyLinkedList.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

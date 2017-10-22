@@ -4,11 +4,12 @@
 using namespace std;
 
 #define MAX 10
-struct Node{
-	int data;
-	Node *next;
-};
+
 class Queue {
+	struct Node {
+		int data;
+		Node *next;
+	};
 	Node* front;
 	Node* rear;
 public:

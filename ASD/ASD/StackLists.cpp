@@ -1,7 +1,3 @@
-#include <iostream>
-
-using namespace std;
-
 #include "StackLists.h"
 
 StackLists::StackLists()
@@ -20,10 +16,7 @@ StackLists::~StackLists()
 }
 
 bool StackLists::isEmpty() {
-	if (top == nullptr)
-		return true;
-	else if (top != NULL)
-		return false;
+	return top == nullptr;
 }
 
 int StackLists::pop() {
@@ -52,6 +45,7 @@ void StackLists::push(int x) {
 	//cout << x << " added to stack" << endl;
 	this->printAll();
 }
+
 int StackLists::peek() {
 	if (this->isEmpty() == false)
 		return this->top->data;

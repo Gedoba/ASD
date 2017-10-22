@@ -1,11 +1,16 @@
 #pragma once
+#include <iostream>
+
+using namespace std;
+
 #define MAX 100
 
-struct Node {
-	int data;
-	Node *next;
-};
+
 class StackLists {
+	struct Node {
+		int data;
+		Node *next;
+	};
 	Node *top;
 public:
 	StackLists();
