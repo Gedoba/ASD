@@ -54,6 +54,7 @@ bool Stack::push(int data) {
 	{
 		top++;
 		stack[top] = data;
+		return true;
 		//cout << stack[top] << endl;
 
 	}

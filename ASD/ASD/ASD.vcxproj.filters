@@ -21,12 +21,21 @@
     <ClCompile Include="StackLists.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="main1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueArrays.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StackArrays.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StackLists.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueArrays.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
