@@ -7,7 +7,7 @@ Queue::Queue() {
 
 Queue::~Queue() {
 	cout << "List queue is getting deleted" << endl;
-	while (front != nullptr)
+	while (!isEmpty())
 		dequeue();
 	cout << "Whole list queue dequeued" << endl << endl;
 }
@@ -32,28 +32,42 @@ void Queue::enqueue(int data) {
 }
 
 int Queue::dequeue() {
-	if (rear == nullptr)
+	if (front == nullptr)
 	{
 		cout << "Queue underflow" << endl;
-		front = nullptr;
 		return 0;
 	}
 	else
 	{
-		Node* toDelete = new Node();
-		toDelete = front;
-		int x = toDelete->data;
-		front = front->next;
-		cout << "Element deleted from queue is: " << x << endl;
-		delete(toDelete);
-		printAll();
-		return x;
+		if (front->next != nullptr)
+		{
+			Node* toDelete = new Node();
+			toDelete = front;
+			int x = toDelete->data;
+			front = front->next;
+			cout << "Element deleted from queue is: " << x << endl;
+			delete(toDelete);
+			printAll();
+			return x;
+		}
+		else
+		{
+			Node* toDelete = new Node();
+			toDelete = front;
+			int x = toDelete->data;
+			cout << "Element deleted from queue is: " << x << endl;
+			delete(toDelete);
+			front = nullptr;
+			rear = nullptr;
+			printAll();
+			return x;
+		}
 	}
 	
 }
 
 void Queue::printAll() {
-	if (front == nullptr)
+	if (isEmpty())
 	{
 		cout << "Queue is empty" << endl;
 		return;
@@ -61,11 +75,21 @@ void Queue::printAll() {
 	cout << "List Queue elements :" << endl << "Front -> [ ";
 	Node* a = new Node();
 	a = front;
-	while (a->next != nullptr)
+	while (a != nullptr)
 	{
 		cout << a->data << " ";
 		a = a->next;
 	}
-	cout << a->data << " ";
 	cout << "] <- Rear" << endl;
+}
+
+bool Queue::isEmpty() {
+	if (rear == nullptr && front == nullptr)
+		return true;
+	else
+		return false;
+}
+
+int Queue::peek() {
+	return front->data;
 }

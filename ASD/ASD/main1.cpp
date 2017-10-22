@@ -13,9 +13,11 @@ int main()
 		Q.enqueue(i);
 		i++;
 	}
-	Q.dequeue(); Q.dequeue();
-	cout << endl << endl;
-	cout << endl << endl;
+	for (i = 0; i < 8; i++)
+	{
+		Q.dequeue();
+	}
+	cout << endl << endl << endl << endl;
 
 	Queue Q1;
 	i = 0;
@@ -24,9 +26,12 @@ int main()
 		Q1.enqueue(i);
 		i++;
 	}
-	Q1.dequeue(); Q1.dequeue();
-	cout << endl << endl;
-	cout << endl << endl;
+	for (i = 0; i < 8; i++)
+	{
+		Q1.dequeue();
+	}
+	cout << endl << endl << endl << endl;
+	
 
 
 	return 0;

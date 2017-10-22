@@ -16,8 +16,7 @@ public:
 	~Queue();
 
 
-	int peek();
-	bool isFull();
+	int peek(); //returns element from the front
 	bool isEmpty();
 	void enqueue(int data);
 	int dequeue();
